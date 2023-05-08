@@ -22,8 +22,8 @@ def FSMCoeff(N, H):
 #H = [1,1,1,0,0] for N=9, N/2 -> 4.5 roundup ->5.. therefore 5 placements for H(k) array.
 #FSMCoeff(N,H)
 Fs = 18 #Hz
-N = 18 #Number of samples in one wavelenth 2pi
+N = 9 #Number of samples in one wavelenth 2pi
 FperS=Fs/N
 print("Frequency per sample point: ",FperS,"Hz")
-H = [1,1,1,1,1,0.688,0.184,0.014,0,0]
+H = H = [1,1,1,0]
 FSMCoeff(N,H)
