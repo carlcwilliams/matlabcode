@@ -230,3 +230,35 @@ def SBF(f1,f2,Tw,PBrip,StBAtt,Fs,Wtype):
     complete_array_coeff=array_coeff[::-1]
     complete_array_coeff.extend(array_coeff[1::])
     return complete_array_coeff
+
+#When using these functions please ensure that you are using the same frequency scale.
+
+#Fpbe - Passband edge frequency
+#Tw - Transition width
+#Fstp -Frequency Stop Band
+#Fs - Sampling Frequency
+#Wtype - rect, han, ham, black
+#LPF(Fpbe,Tw,Fstp,Fs,Wtype)
+LPF(1.5,0.5,0,8,"ham")
+
+#--------------------------------------------------
+#f1 - f1 edge frequency
+#f2 - f2 edge frequency
+#Tw - Transition width
+#PBrip -Passband Ripple
+#StBAtt - Stopband attenuation
+#Fs - Sampling Frequency
+#Wtype - rect, han, ham, black
+#BPF(f1,f2,Tw,PBrip,StBAtt,Fs,Wtype)
+#BPF(10,20,1,0.1,60,100,"ham")
+
+#------------------------------------------------
+#f1 - f1 edge frequency
+#f2 - f2 edge frequency
+#Tw - Transition width
+#PBrip -Passband Ripple
+#StBAtt - Stopband attenuation
+#Fs - Sampling Frequency
+#Wtype - rect, han, ham, black
+#SBF(f1,f2,Tw,PBrip,StBAtt,Fs,Wtype)
+#SBF(10,20,1,0.1,60,100,"ham")
